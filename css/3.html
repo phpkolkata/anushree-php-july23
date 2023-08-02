@@ -7,6 +7,7 @@
     <!-- head section is common area for javacsript and css -->
     <style type="text/css">
       /* css area */
+      /* Css by Class */
       .box {
         background-color: aqua;
         color: red;
@@ -36,33 +37,82 @@
         font-size: 16px;
         padding: 20px;
       }
+
+      /* css by ID */
+      #abc {
+        background-color: red;
+      }
+
+      /* css by Element/Tag */
+      /* B {
+        font-size: 40px;
+        color: blue;
+      } */
+      DIV {
+        font-size: 10px;
+      }
+
+      /* css by reference */
+      /*  Direct child*/
+      /* DIV > B {
+        font-size: 40px;
+        color: blue;
+      }
+      /* any level child */
+      /* DIV B {
+        font-size: 40px;
+        color: blue;
+      } */
+
+      /* .box2 B {
+        font-size: 40px;
+        color: blue;
+      } */
+
+      #abc B {
+        font-size: 40px;
+        color: blue;
+      }
+
+      /* Parallel CSS */
+      div,
+      b,
+      i,
+      u {
+        font-size: 12px;
+      }
     </style>
   </head>
   <body>
     <!-- inDocument css / internal css -->
 
     <div class="box">hello</div>
-
     <br />
     <div class="box2">
       hello thi si testing hello thi si testing hello thi si testing hello thi
       si testing hello thi si testing hello thi si testing hello thi si testing
       hello thi si testing hello thi si testing hello thi si testing hello thi
-      si testing hello thi si testing hello thi si testing hello thi si testing
+      si testing hello thi si<span><b>bold</b></span> testing hello thi si
+      testing hello thi si testing hello thi si testing hello thi si testing
       hello thi si testing hello thi si testing hello thi si testing hello thi
       si testing hello thi si testing hello thi si testing hello thi si testing
-      hello thi si testing hello thi si testing
     </div>
     <div class="box2 fancy">
       hello thi si testing hello thi si testing hello thi si testing hello thi
       si testing hello thi si testing hello thi si testing hello thi si testing
+      hello thi si testing hello thi <b>bold 2</b>si testing hello thi si
+      testing hello thi si testing hello thi si testing hello thi si testing
       hello thi si testing hello thi si testing hello thi si testing hello thi
       si testing hello thi si testing hello thi si testing hello thi si testing
-      hello thi si testing hello thi si testing hello thi si testing hello thi
-      si testing hello thi si testing hello thi si testing hello thi si testing
-      hello thi si testing hello thi si testing
+      hello thi si testing hello thi si testing hello thi si testing
     </div>
 
-    <b>bold</b>
+    <b>bold 3</b>
+    <div id="abc">
+      this is test div
+      <b>bold 4</b>
+    </div>
+
+    <b>bold 5</b>
   </body>
 </html>
