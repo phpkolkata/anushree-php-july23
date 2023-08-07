@@ -1,0 +1,16 @@
+DESIGN PART: (BASIC)
+html
+css
+bootstrap
+javascript
+jquery
+
+
+CODE PART: (Detailed)
+PHP
+Mysql
+Ajax
+Project
+
+PHP FRAMEWORK: (Begginer level)
+Laravel/Codeignitor
