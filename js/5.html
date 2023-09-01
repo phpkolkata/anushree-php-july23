@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script lang="javascript">
+      function hello(){
+          var nm = document.getElementById("nm");
+
+          if(nm.value){
+              alert("hello "+nm.value);
+          }else{
+            alert("Please enter your name first!")
+          }
+
+      }
+    </script>
+  </head>
+  <body>
+    Name:<input type="text" id="nm" /><br />
+    <button onclick="hello()">Say Hello</button>
+  </body>
+</html>

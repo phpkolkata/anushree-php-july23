@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>javascript validation</title>
+    <script lang="javascript">
+      function hello(){
+          var nm = document.getElementById("nm");
+          var age = document.getElementById("age");
+
+          if(nm.value == ""){
+              alert("Please enter your name first!")
+          }
+          else if(age.value == ""){
+              alert("Please enter your age first!")
+          }
+          else{
+            alert("hello "+ nm.value+", your age is "+age.value);
+          }
+
+      }
+    </script>
+  </head>
+  <body>
+    Name:<input type="text" id="nm" /><br />
+    Age: <input type="text" id="age" /><br />
+    <button onclick="hello()">Say Hello</button>
+  </body>
+</html>
