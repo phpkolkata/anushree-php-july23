@@ -20,8 +20,14 @@
           if(nm.value == ""){
               alert("Please enter your name first!")
           }
+           else if(nm.value.length < 3){
+              alert("Please enter your name atleast 2-10 chars!")
+          }
           else if(age.value == ""){
               alert("Please enter your age first!")
+          }
+          else if(isNaN(age.value)){
+              alert("Please enter your age in numbers!")
           }
           else if(city.value == ""){
               alert("Please enter your city first!")
