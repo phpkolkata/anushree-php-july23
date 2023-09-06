@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script lang="javascript">
+      function check(){
+       var nm = document.getElementById("nm");
+       if(nm.value == ""){
+        alert("please enter name");
+       }
+       else if(nm.value.length <=2){
+        alert("please enter name 3 chars min")
+       }
+       else{
+        alert("thanks, foRm submitted")
+       }
+      }
+    </script>
+  </head>
+  <body>
+    Name: <input type="text" id="nm" />
+    <button onclick="check()">click</button>
+  </body>
+</html>
