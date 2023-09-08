@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <style type="text/css">
+      .abc {
+        background-color: yellow;
+        font-size: 40px;
+        margin: 30px;
+      }
+    </style>
+    <script lang="javascript">
+        function hide(){
+        var box  = document.getElementById("box");
+        box.style.display = "none";
+
+      }
+
+         function show(){
+        var box  = document.getElementById("box");
+        box.style.display = "block";
+
+      }
+    </script>
+  </head>
+  <body>
+    <div class="card w-50 mx-auto p-4 mt-4" id="box">
+      hello this is javascript example for css customization on run time hello
+      this is javascript example for css customization on run time hello this is
+      javascript example for css customization on run time hello this is
+      javascript example for css customization on run time hello this is
+      javascript example for css customization on run time hello this is
+      javascript example for css customization on run time hello this is
+      javascript example for css customization on run time hello this is
+      javascript example for css customization on run time hello this is
+      javascript example for css customization on run time
+    </div>
+    <div class="w-50 mx-auto mt-4">
+      <button class="btn btn-warning" onclick="hide()">hide</button>
+      <button class="btn btn-info" onclick="show()">show</button>
+    </div>
+  </body>
+</html>
+
+<!-- homework 1 - single function to run both button operation -->
+<!-- homework 2 - single function and single button to run both button operation - change value and behaviour on single button -->

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <style type="text/css">
+      .abc {
+        background-color: yellow;
+        font-size: 40px;
+        margin: 30px;
+      }
+    </style>
+    <script lang="javascript">
+        function chColor(cls){
+        var box  = document.getElementById("box");
+        // box.style.color = clr;
+        // box.classList.add('abc')
+        box.classList.remove('text-primary');
+        box.classList.remove('text-success');
+        box.classList.remove('text-danger');
+
+        box.classList.add(cls)
+      }
+    </script>
+  </head>
+  <body>
+    <div class="card w-50 mx-auto p-4 mt-4" id="box">
+      hello this is javascript example for css customization on run time hello
+      this is javascript example for css customization on run time hello this is
+      javascript example for css customization on run time hello this is
+      javascript example for css customization on run time hello this is
+      javascript example for css customization on run time hello this is
+      javascript example for css customization on run time hello this is
+      javascript example for css customization on run time hello this is
+      javascript example for css customization on run time hello this is
+      javascript example for css customization on run time
+    </div>
+    <div class="w-50 mx-auto mt-4">
+      <button class="btn btn-danger" onclick="chColor('text-danger')">
+        Red
+      </button>
+      <button class="btn btn-success" onclick="chColor('text-success')">
+        Green
+      </button>
+      <button class="btn btn-primary" onclick="chColor('text-primary')">
+        Blue
+      </button>
+    </div>
+  </body>
+</html>
