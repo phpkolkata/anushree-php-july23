@@ -18,18 +18,27 @@
       }
     </style>
     <script lang="javascript">
-        function hide(){
-        var box  = document.getElementById("box");
-        box.style.display = "none";
+      //   function hide(){
+      //   var box  = document.getElementById("box");
+      //   box.style.display = "none";
 
-      }
+      // }
 
-         function show(){
-        var box  = document.getElementById("box");
-        box.style.display = "block";
+      //    function show(){
+      //   var box  = document.getElementById("box");
+      //   box.style.display = "block";
 
-      }
+      // }
+
+
+      // function hideshow(act){
+      //   var box  = document.getElementById("box");
+      //   box.style.display = act;
+
+      // }
     </script>
+
+    <script src="14.js"></script>
   </head>
   <body>
     <div class="card w-50 mx-auto p-4 mt-4" id="box">
@@ -44,8 +53,8 @@
       javascript example for css customization on run time
     </div>
     <div class="w-50 mx-auto mt-4">
-      <button class="btn btn-warning" onclick="hide()">hide</button>
-      <button class="btn btn-info" onclick="show()">show</button>
+      <button class="btn btn-warning" onclick="hideshow('none')">hide</button>
+      <button class="btn btn-info" onclick="hideshow('block')">show</button>
     </div>
   </body>
 </html>

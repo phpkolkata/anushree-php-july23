@@ -1,0 +1,18 @@
+- jquery is a framework of javascript, similarly css framework is bootstrap
+
+
+- js selectors = docoument.getElementById("box")
+
+
+- jquery 2 important topic, selectors & annonymous function
+- jquery selector
+    $("#box") - by id
+    $(".box") - by class
+    $("div")  - by element
+
+- annonymous function - a function without a name
+function (){
+    // code here
+}
+
+
