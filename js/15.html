@@ -11,16 +11,31 @@
       integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
       crossorigin="anonymous"
     />
-    <script lang="javascript"></script>
+    <script lang="javascript">
+
+      function apply(){
+        var box = document.getElementById("box");
+        var red = document.getElementById("red");
+        var blue = document.getElementById("blue");
+        var green = document.getElementById("green");
+        var bgColor = document.getElementById("bgColor").value;
+
+        var fontColor = "black";
+        if(red.checked){
+          fontColor = "red";
+        }
+
+
+
+        box.style.color = fontColor;
+        box.style.background = bgColor;
+      }
+    </script>
   </head>
   <body>
     <!-- hw: simple web editor -->
-    <div
-      id="box"
-      class="w-50 mx-auto shadow card p-4 m-4"
-      style="display: block"
-    >
-      <textarea rows="10" cols="70">
+    <div class="w-50 mx-auto shadow card p-4 m-4" style="display: block">
+      <textarea rows="10" cols="63" id="box">
       This is my test data, A quick brown fox jumps over little lazy dog. This
       is my test data, A quick brown fox jumps over little lazy dog. This is my
       test data, A quick brown fox jumps over little lazy dog. This is my test
@@ -34,16 +49,16 @@
     </div>
     <div class="w-50 mx-auto">
       Font Color: <br />
-      <input type="radio" value="" /> Red<br />
-      <input type="radio" value="" /> Green<br />
-      <input type="radio" value="" /> Blue<br />
+      <input type="radio" name="fcolor" value="red" id="red" /> Red<br />
+      <input type="radio" name="fcolor" value="green" id="green" /> Green<br />
+      <input type="radio" name="fcolor" value="blue" id="blue" /> Blue<br />
       <hr />
       BackGround:<br />
-      <select>
-        <option>select</option>
-        <option>Red</option>
-        <option>Green</option>
-        <option>Blue</option>
+      <select id="bgColor">
+        <option value="white">select</option>
+        <option value="red">Red</option>
+        <option value="green">Green</option>
+        <option value="blue">Blue</option>
       </select>
       <hr />
       Font Style:<br />
@@ -55,7 +70,7 @@
       <input type="number" />px<br />
       <hr />
 
-      <button class="btn btn-success">Apply</button>
+      <button class="btn btn-success" onclick="apply()">Apply</button>
     </div>
   </body>
 </html>
