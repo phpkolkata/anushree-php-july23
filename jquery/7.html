@@ -1,0 +1,93 @@
+<!dogTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>dogument</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+      crossorigin="anonymous"
+    />
+    <script lang="javascript">
+
+      function apply(){
+        var box = document.getElementById("box");
+        var red = document.getElementById("red");
+        var blue = document.getElementById("blue");
+        var green = document.getElementById("green");
+        var bgColor = document.getElementById("bgColor").value;
+
+        var fontColor = "black";
+        if(red.checked){
+          fontColor = red.value;
+        }
+
+        box.style.color = fontColor;
+        box.style.background = bgColor;
+      }
+    </script>
+  </head>
+  <body>
+    <!-- hw: simple web editor -->
+    <div class="w-50 mx-auto shadow card p-4 m-4" style="display: block">
+      <textarea rows="10" cols="63" id="box">
+      This is my test data, A quick brown fox jumps over little lazy dog. This
+      is my test data, A quick brown fox jumps over little lazy dog. This is my
+      test data, A quick brown fox jumps over little lazy dog. This is my test
+      data, A quick brown fox jumps over little lazy dog. This is my test data,
+      A quick brown fox jumps over little lazy dog. This is my test data, A
+      quick brown fox jumps over little lazy dog. This is my test data, A quick
+      brown fox jumps over little lazy dog. This is my test data, A quick brown
+      fox jumps over little lazy dog. This is my test data, A quick brown fox
+      jumps over little lazy dog.
+      </textarea>
+    </div>
+    <div class="w-50 mx-auto">
+      Font Color: <br />
+      <input type="radio" name="fcolor" value="red" id="red" /> Red<br />
+      <input type="radio" name="fcolor" value="green" id="green" /> Green<br />
+      <input type="radio" name="fcolor" value="blue" id="blue" /> Blue<br />
+      <hr />
+      BackGround:<br />
+      <select id="bgColor">
+        <option value="white">select</option>
+        <option value="red">Red</option>
+        <option value="green">Green</option>
+        <option value="blue">Blue</option>
+      </select>
+      <hr />
+      Font Style:<br />
+      <input type="checkbox" value="" /> Bold<br />
+      <input type="checkbox" value="" /> Italic<br />
+      <input type="checkbox" value="" /> Underline<br />
+      <hr />
+      Font Size:<br />
+      <input type="number" />px<br />
+      <hr />
+
+      <button class="btn btn-success" id="btn">Apply</button>
+    </div>
+
+    <script src="jquery.js"></script>
+    <script lang="javascript">
+
+      $(document).ready(function(){
+        $("#btn").click(function(){
+            var fcolor = "black";
+            var bgColor = "white";
+            fcolor = $('input[name="fcolor"]:checked').val();
+            bgColor = $("#bgColor").val();
+            // alert(bgColor)
+
+            $("#box").css("color", fcolor);
+            $("#box").css("background", bgColor);
+
+        });
+
+      });
+    </script>
+  </body>
+</html>
