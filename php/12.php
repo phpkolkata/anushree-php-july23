@@ -15,3 +15,7 @@ echo $arr[3];
 echo $arr[4];
 
 echo count($arr);
+
+for ($i = 0; $i <= 3; $i++) {
+    echo $arr[$i] . "<br>";
+}
