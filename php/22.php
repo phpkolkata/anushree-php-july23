@@ -28,7 +28,7 @@
     </script>
 </head>
 <body>
-    <form action="23.php" method="get">
+    <form action="23.php?x=33" method="post">
     Name:<input type="text" name="nm" id="nm"><br>
     Age:<input type="number" name="age" id="age"><br>
     Gender:
@@ -38,6 +38,10 @@
 
     <button onclick="return check()">Submit</button>
 </form>
+
+<!-- QUERY STRING - ?nm=raj&age=33 -->
+<a href="23.php?nm=raj&age=33">click here</a>
+
 
 </body>
 </html>
