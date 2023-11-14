@@ -1,6 +1,7 @@
 <!-- html area -->
 
 <?php
+
 // php tag open
 
 // php - php hypertext preprocessor
