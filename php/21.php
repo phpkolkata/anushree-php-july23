@@ -5,9 +5,9 @@
 // $_POST
 // $_REQUEST
 // $_FILES
+// $_SESSION
 // $_COOKIE
 // $_SERVER
-// $_SESSION
 
 print_r($_GET);
 print_r($_POST);
