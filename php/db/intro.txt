@@ -1,0 +1,29 @@
+- localhost/phpmyadmin   - an interface provided by php to handle mysql
+
+- database is a collection of tables
+- table is a collection of records
+
+
+- primary Key - unique & not null
+
+
+Homework
+
+https://www.w3schools.com/sql/default.asp
+
+SQL Select Distinct
+*SQL Select
+*SQL Where
+*SQL And, Or, Not
+*SQL Order By
+*SQL Insert Into
+*SQL Update
+*SQL Delete
+SQL Null Values
+SQL Select Top
+SQL Min and Max
+SQL Count, Avg, Sum
+SQL Like
+SQL Wildcards
+SQL In
+SQL Between
