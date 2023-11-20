@@ -1,0 +1,35 @@
+Database: mobile_store
+
+Tables:
+    1. Category
+    2. Product 
+    3. client
+    4. orders
+    5. admin
+
+Category:
+id(primary key)      name    is_active    
+1                    lava        y
+2                    Nokia        y
+
+
+Product:
+id    cat_id(foreing key)      name        price       description   is_active  
+1      1                        l33         787             hhjhjh      y
+2      2                         n33         787             hhjhjh      y
+3      2                         n33         787             hhjhjh      y
+
+
+
+Client:
+id      name    email       password        mobile      address   is_active
+
+
+
+Order:
+id      pid      cid    qnty  date  status  comment  is_paid
+
+
+admin:
+
+id  name    email   password 
