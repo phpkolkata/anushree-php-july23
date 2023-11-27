@@ -5,6 +5,7 @@ require "connection.php";
 extract($_REQUEST);
 
 $sql = "UPDATE `category` SET `name`='$nm', `is_active`='$isa' WHERE `id`='$id'";
+
 // print $sql;
 mysqli_query($con, $sql);
 
