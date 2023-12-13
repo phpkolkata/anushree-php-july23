@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    Email: <input type="text" id="email" /> <span id="msg"></span>
+    <br />
+    <!-- <button id="btn">Check</button> -->
+
+    <script src="../jquery.js"></script>
+    <script lang="javascript">
+      $(document).ready(function(){
+
+          // $("#btn").click(function(){
+          $("#email").keyup(function(){
+            //   alert($("#email").val());
+
+            // ajax call
+            $.ajax({
+                url:'check.php',
+                method:'post',
+                data:{em:$("#email").val()},
+                success:function(res){
+                  if(res == 0){
+                    $("#msg").html('You can use this email id')
+                    $("#msg").css("color","green");
+                  }
+                  else
+                  {
+                    $("#msg").html('email already exists!')
+                    $("#msg").css("color","red");
+                  }
+
+                },
+                error: function(err){
+                    alert(err)
+                }
+            });
+
+          });
+
+      });
+    </script>
+  </body>
+</html>
